@@ -1,0 +1,162 @@
+
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* Header */
+
+header {
+    background: #2563eb;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Sections */
+
+.form-section,
+.table-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Form */
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* Buttons */
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.cancel-btn {
+    background: #64748b;
+    margin-left: 8px;
+}
+
+.edit-btn {
+    background: #16a34a;
+    margin: 3px;
+}
+
+.delete-btn {
+    background: #dc2626;
+    margin: 3px;
+}
+
+/* Search */
+
+#searchInput {
+    margin-bottom: 18px;
+}
+
+/* Table */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 13px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+#message {
+    margin-bottom: 12px;
+    color: #15803d;
+    font-weight: bold;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .form-section,
+    .table-section {
+        padding: 15px;
+    }
+}
